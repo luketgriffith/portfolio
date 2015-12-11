@@ -1,0 +1,20 @@
+.thumbnail {
+  /*border: none;*/ }
+
+.jumbotron {
+  color: green;
+  height: 400px;
+  background-image: url("../bg.jpg");
+  background-size: 100%;
+  margin-bottom: 0;
+  border-bottom: 2px solid #2D2D2D; }
+
+.nameMain {
+  margin-top: 7%; }
+
+.secondRow {
+  height: 290px;
+  padding: 5px;
+  padding-top: 60px;
+  text-align: center;
+  background-color: #EEE; }

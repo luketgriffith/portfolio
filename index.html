@@ -23,8 +23,8 @@
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
-    <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <body data-spy="scroll" data-target="#navbar">
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="navbar" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <ul class="nav navbar-nav">
@@ -39,113 +39,180 @@
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
-      <div class="container">
-        <h1 class="name">Luke T. Griffith</h1>
+      <div class="container nameMain">
+        <h1 class="wat">Luke <span class="lastName">Griffith<span></h1>
         <p>Web Developer.</p>
       </div>
     </div>
 
-    <div class="container">
+    <div class="container-fluid">
       <!-- Example row of columns -->
       <div class="row">
-        <div class="secondRow col-md-4 col-sm-8 col-xs-12">
-          <h2>My Work</h2>
-          <p>Take a look at what I've made.</p>
-          <button class="btn btn-default"><a href="#work">Go to Work</a></button>
+        <div class="row secondRow col-md-4 col-sm-6 col-xs-12">
+          <div class="innerRow col-md-10">
+            <h2>My Work</h2>
+            <p>Take a look at what I've made.</p>
+            <button class="btn btn-default"><a href="#work">Go to Work</a></button>
+          </div>
         </div>
 
-    <div class="secondRow col-md-4 col-sm-8 col-xs-12">
-      <h2>Experience</h2>
-        <p>View my experience here or <a href="#">download a copy.</a></p>
-          <button class="btn btn-default"><a href="#resume">View Experience</a></button>
-       </div>
-
-    <div class="secondRow col-md-4 col-sm-8 col-xs-12">
-      <h2>Contact Me</h2>
-          <p>Let's get in touch.</p>
-          <button class="btn btn-default"><a href="#contact">Contact</a></button>
+    <div class="row secondRow col-md-4 col-sm-6 col-xs-12">    
+      <div class="innerRow col-md-10">
+        <h2>Experience</h2>
+          <p>View my resume or <a href="#">download it.</a></p>
+            <button class="btn btn-default"><a href="#resume">View Experience</a></button>
+         </div>
+      </div>   
+    <div class="row secondRow col-md-4 col-sm-10 col-xs-12">
+      <div class="innerRow col-md-10">
+        <h2>Contact Me</h2>
+            <p>Let's get in touch.</p>
+            <button class="btn btn-default"><a href="#contact">Contact</a></button>
+      </div>
     </div>
-
+      
       </div>
 
       <hr>
 
-      <div class="tier container-fluid">
-        <div id="work">
-          <h2>Work</h2>
+      <div id="work" class="tier container-fluid row">
+        <div >
+          <h2 class="workTitle">Work</h2>
+          <h5>These are a few of the apps I've made. I like to build in Angular (React is 2nd), and also with Foundation or Bootstrap. See all my code on <a href="https://github.com/luketgriffith">Github.</a></h5>
 
-          <div class="projects row">
-            <div class="proj thumbnail col-md-4 col-sm-6 col-xs-12">
-              <img src="https://www.placecage.com/300/300">
-              <div class="caption">
-                <h3>Project 1</h3>
-                <a href="#">Live</a>
-                <a href-"#">Github</a>
-              </div>  
-            </div>
 
-            <div class="proj thumbnail col-md-4 col-sm-6 col-xs-12">
-              
-              <img src="https://www.placecage.com/300/300">
-              <div class="caption">
-                <h3>Project 2</h3>
-                <a href="#">Live</a>
-                <a href-"#">Github</a>
+
+
+
+        <div class="carousel">    
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="carousel-example-generic" data-slide-to="3" class="active"></li>
+          </ol>
+         
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <a href="https://colossal-leg.surge.sh"><img class="carouselImg" src="http://i.imgur.com/twM43Wo.png"></a>
+              <div class="carousel-caption">
+                  <h3>Form Validation</h3>
+                  <a class="btn btn-primary btn-lg" href="https://colossal-leg.surge.sh">Live</a>
+                  <a class="btn btn-primary btn-lg" href="https://github.com/luketgriffith/contactList">Github</a>
+                  <p>This small 'contact us' application ensures that the form is properly filled out before being submitted. Also employs Foundation for basic styling.</p>
               </div>
             </div>
-
-            <div class="proj thumbnail col-md-4 col-sm-6 col-xs-12">
-              <img src="https://www.placecage.com/300/300">
-              <div class="caption">
-                <h3>Project 3</h3>
-                <a href="#">Live</a>
-                <a href-"#">Github</a>
-              </div>  
+            <div class="item">
+              <a href="https://annoyed-body.surge.sh"><img class="carouselImg" src="http://i.imgur.com/lpGgn1v.jpg"></a>
+              <div class="carousel-caption">
+                  <h3>Angular Photo Repo</h3>
+                <a class="btn btn-primary btn-lg" href="https://annoyed-body.surge.sh">Live</a>
+                <a class="btn btn-primary btn-lg" href="https://github.com/luketgriffith/angularPhotoBin">Github</a>
+                <p>Using AngularJS and a Parse server, this app is made to keep all your photos in one spot. Employs angular-ui-router and Foundation for styling.</p>
+              </div>
             </div>
-
+            <div class="item">
+              <a href="https://addicted-holiday.surge.sh"><img class="carouselImg" src="http://i.imgur.com/pLM5iZt.png"></a>
+              <div class="carousel-caption">
+                  <h3>Homebrew Recipes</h3>
+                <a class="btn btn-primary btn-lg" href="https://addicted-holiday.surge.sh">Live</a>
+                <a class="btn btn-primary btn-lg" href="https://github.com/luketgriffith/homebrew">Github</a>
+                <p>I am an avid homebrewer, so I made an app to keep track of my recipes. Uses Angular for routing and a Parse server. It also includes a few calculators for brew day.</p>
+              </div>
+            </div>
+            <div class="item">
+              <a href="https://spooky-join.surge.sh/#/"><img class="carouselImg" src="http://i.imgur.com/vmixEXN.jpg"></a>
+              <div class="carousel-caption">
+                  <h3>SmartCart</h3>
+                <a class="btn btn-primary btn-lg" href="http://spooky-join.surge.sh/#/">Live</a>
+                <a class="btn btn-primary btn-lg" href="https://github.com/Grubard/smartCart">Github</a>
+                <p>This app syncs your grocery list and pantry, and helps you make smarter decisions in your shopping.</p>
+              </div>
+            </div>
           </div>
-          
+         
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
         </div>
+        </div> <!-- Carousel -->
 
-        <hr>
 
-        <div id="resume" class="row"> 
-          <div class="thumbnail col-md-3 col-xs-6">
-            <img src="http://rbmm.com/wp-content/uploads/2010/01/Chick-fil-A-Logo-Detail-RBMM.jpg">
-            <div class="caption">
-            <h3>Chick-fil-A</h3>
-            <small>Management</small>
-            </div>
 
+          
+
+           
+
+            
+  
+        <div id="resume" class="container-fluid">
+
+          <div>
+            <h2></h2>
+            <h5>All my experience has been invaluable; even more so because it pushed me toward programming.</h5> 
           </div>
 
-          <div class="thumbnail col-md-3  col-xs-6">
-            <img src="https://cdn3.iconfinder.com/data/icons/tools-in-blue-gray/512/2-512.png">
-            <div class="caption">
-            <h3>Driv-Lok</h3>
-            <small>Marketing and Pricing</small>
+        <div class="row container-fluid"> 
+        
+          
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="hovereffect">
+              <img class="img-responsive" src="http://rbmm.com/wp-content/uploads/2010/01/Chick-fil-A-Logo-Detail-RBMM.jpg" alt="">
+              <div class="overlay">
+                <h2>Chick-fil-A</h2>
+                <h3>Store Director</h3>
+                <h4>I managed Chick-fil-A restaurants with over $8M in combined yearly sales. I was responsible for all operations, hiring, marketing, sales, and profit (Wheaton, IL | Buford, GA | Dacula, GA).</h4>
+              </div>
             </div>
           </div>
 
-          <div class="thumbnail col-md-3  col-xs-6">
-            <img src="http://www.prlog.org/11868796-insurance-icon.png">
-            <div class="caption">
-            <h3>Liberty Mutual</h3>
-            <small>Customer Service</small>
+
+          
+          <div class="col-lg-3  col-md-4 col-sm-6 col-xs-12">
+            <div class="hovereffect">
+              <img class="img-responsive" src="https://cdn3.iconfinder.com/data/icons/tools-in-blue-gray/512/2-512.png">
+              <div class="overlay">
+                <h2>Driv-Lok</h2>
+                <h3>Marketing Analyst</h3>
+                <h4>Used material prices and consumer demand to decide on pricing for custom fastening solutions. Assisted in website design for the company.</h4>
+              </div>
             </div>
           </div>
-          <div class="thumbnail col-md-3 col-xs-6">
-            <img src="http://ui.aroundcampusgroup.com/images/internships.png">
-            <div class="caption">
-              <h3>Wheaton College</h3>
-              <small>BA in Business and Economics</small>
+
+          <div class="col-lg-3  col-md-4 col-sm-6 col-xs-12">
+            <div class="hovereffect">
+              <img class="img-responsive" src="http://www.prlog.org/11868796-insurance-icon.png">
+              <div class="overlay">
+                <h2>Liberty Mutual</h2>
+                <h3>Customer Service Claims Representative</h3>
+                <h4>Decided liability on car insurance claims. Fielded incoming calls from clients and paid claims based on coverage.</h4>
+              </div>
             </div>
+          </div>
+
+          <div class="col-lg-3  col-md-4 col-sm-6 col-xs-12">
+            <div class="hovereffect">
+              <img class="img-responsive" src="http://ui.aroundcampusgroup.com/images/internships.png">
+              <div class="overlay">
+                <h2>Wheaton College</h2>
+                <p>BA in Business and Economics</p>
+              </div>
+            </div>
+           </div> 
 
           </div>
           <div class="container">
-            <h2>Download Resume</h2>
+            <h2 class='download'>Download Resume</h2>
           </div>
         </div>
+       </div> 
         
         <hr>
 
@@ -157,10 +224,11 @@
       <footer>
         <p>&copy; Company 2015</p>
       </footer>
-    </div> <!-- /container -->        
+    </div> <!-- /container -->     
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>   
         <script src="js/vendor/jquery-1.11.2.min.js"></script>
         <script src="js/vendor/bootstrap.min.js"></script>
-        
+      
         <script src="js/main.js"></script>
 
         
